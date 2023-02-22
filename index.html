@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepanshu's personal website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ddb68f0a91.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/Logo.png" type="image/gif/png">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i> 
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i> 
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Deepanshu</span> <br> from India</h1>
+            </div>
+        </div>
+    </div>
+ <!-- ------------------about--------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1> <br>
+                    <p>Hi, my name is Deepanshu and I am a 14-year-old developer from India. I was born on August 19th and have been interested in coding since a young age. My passion for programming has led me to explore different technologies and develop various applications. I aspire to become a software engineer and contribute to the tech industry. When I'm not coding, I enjoy playing video games and spending time with my friends and family.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li class="ind"><span class="ind">UI/UX</span><br>Designing web/App interfaces</li>
+                            <li class="ind"><span class="ind">Web Development</span><br>Web app Development</li>
+                             <li class="ind"><span class="ind">Languages</span><br>Java, Python, CSS, HTML</li>
+                             <li class="ind"><span class="ind">App Development</span><br>Learning</li>
+                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li class="ind"><span class="ind">2020 - current</span><br>UI/UX made 2 well developed websites, 3 well developed discord Bots</li>
+                            <li class="ind"><span class="ind">2019 - 2020</span><br>Came in software field</li>
+                             <li class="ind"><span class="ind">2020 - 2021</span><br>Learnt basic HTML and CSS</li>
+                             <li class="ind"><span class="ind">2021 - 2022</span><br>Learnt Python and Java</li>
+                             <li class="ind"><span class="ind">2022 - 2023</span><br>Enhancing my skills and worked on good projects mentioned above</li>
+                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li class="ind"><span class="ind">2019 - 2021</span><br>Primary School</li>
+                            <li class="ind"><span class="ind">2021 - 2022</span><br>Went Hostel and learnt many things in software and hardware field</li>
+                             <li class="ind"><span class="ind">2022 - 2023</span><br>Learning things online to enhance myself</li>
+                             <li class="ind"><span class="ind">Future</span><br>My plan is to go in IIT College and want to get Foreign Internship</li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------------------------Services--------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i> 
+                    <h2>Web Design</h2> <br>
+                    <p class="ind">I can provide creative and visually appealing web design services that meet your business needs, using modern design principles and user experience best practices.</p>
+                    <a href="#services">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2> <br>
+                    <p class="ind">I can provide UI/UX design services to enhance the usability and accessibility of your web and mobile applications, with a focus on user-centered design and functionality.</p>
+                    <a href="#services">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2> <br>
+                    <p class="ind">I can provide app design services, creating engaging and intuitive designs for your mobile applications, while continually learning and improving my skills in app development.</p>
+                    <a href="#services">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------Portfolio--------------------- -->
+
+    <div id="portfolio">
+       <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Website</h3>
+                    <p>This is my first ever website made. <br> I hope you would like it. <br> Visit it by click the button below.</p>
+                    <a href="https://thedisciples.netlify.app/" target="main"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Discord Bots</h3>
+                    <p>I made total of 2 Discord bots. <br> If you want to see and use them join discord and DM me (Deepanshu#9187)</p>
+                    <a href="https://discord.com/" target="main"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Applications</h3>
+                    <p>Right now, I am learning application coding, soon Application will come</p>
+                    <a href="#portfolio"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://discord.gg/mNNqZYyKFR" target="main" class="btn">Join Server</a>
+
+       </div>
+
+    </div>
+
+    <!-- ---------------Contact------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>depanshusingla19808@gmail.com</p>
+                    <p><i class="fa-brands fa-discord"></i>Discord ID :- Deepanshu#9187</p>
+                    <div class="social-icons">
+                        <a href="#contact"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#contact"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#contact"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#contact"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://discord.com/" target="main"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet"> 
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Deepanshu. Made with <i class="fa-solid fa-heart"></i> by Deepanshu</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+                   var tablinks = document.getElementsByClassName("tab-links")
+                   var tabcontents = document.getElementsByClassName("tab-contents")
+                   function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                   }
+
+
+        </script>
+
+        <script>
+            var sidemeu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemeu.style.right = "0";
+            }
+            function closemenu(){
+                sidemeu.style.right = "-200px";
+            }
+
+
+
+        </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzXlUf2-t7TVySn0vWg9qqBGFm0H4u3jew2-zr7dkxwHZcwLFFbdLug5WSN2ArOHr3Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(
+                function(){
+                    msg.innerHTML = ""
+                },3000)
+                form.reset()
+            
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+
+</html>
